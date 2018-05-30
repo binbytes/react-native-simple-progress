@@ -18,7 +18,7 @@ export default class ProgressBar extends Component {
     }
 
     render() {
-        const { height, progressColor, borderColor, borderRadius } = this.props;
+        const { height, progressColor, borderColor, borderRadius, borderWidth } = this.props;
 
         const widthInterpolated = this.animation.interpolate({
             inputRange: [0, 100],
@@ -27,7 +27,7 @@ export default class ProgressBar extends Component {
         });
 
         return (
-            <View style={[styles.container, { height, borderColor }]}>
+            <View style={[styles.container, { height, borderColor, borderRadius, borderWidth }]}>
                 <Animated.View
                     style={[
                         {
@@ -47,20 +47,21 @@ ProgressBar.defaultProps = {
     height: 24,
     progressColor: "#3B7FD2",
     borderColor: "#ccc",
-    borderRadius: 25
+    borderRadius: 25,
+    borderWidth: 1
 };
 
 ProgressBar.propTypes = {
     progress: PropTypes.number.isRequired,
     height: PropTypes.number,
     progressColor: PropTypes.string,
-    borderColor: PropTypes.string
+    borderColor: PropTypes.string,
+    borderRadius: PropTypes.number,
+    borderWidth: PropTypes.number
 };
 
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 1,
-        borderRadius: 25,
         justifyContent: "center",
         padding: 2
     },
