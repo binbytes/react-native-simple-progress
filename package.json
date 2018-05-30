@@ -1,0 +1,28 @@
+{
+  "name": "react-native-simple-progress",
+  "version": "0.1.0",
+  "description": "Simple & Easy to use progressbar for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binbytes/react-native-simple-progress.git"
+  },
+  "keywords": [
+    "ReactNative",
+    "Progress",
+    "ProgressBar"
+  ],
+  "author": "Bhavik Charola <bhavikcharola@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binbytes/react-native-simple-progress/issues"
+  },
+  "homepage": "https://github.com/binbytes/react-native-simple-progress#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2"
+  }
+}
